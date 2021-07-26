@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nehawu.MembershipRegistration.Backend</name>
+    </assembly>
+    <members>
+        <member name="T:Nehawu.MembershipRegistration.Backend.Authorization.IShaProjectNamePermissionChecker">
+            <summary>
+            ShaProjectName Permission checker
+            </summary>
+        </member>
+        <member name="M:Nehawu.MembershipRegistration.Backend.Authorization.IShaProjectNamePermissionChecker.IsDataAdministrator(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nehawu.MembershipRegistration.Backend.Authorization.PermissionNames">
+            <summary>
+            ShaProjectName Permission names
+            </summary>
+        </member>
+        <member name="F:Nehawu.MembershipRegistration.Backend.Authorization.PermissionNames.GeneralDashboard">
+            <summary>
+            Pages: General Dashboard
+            </summary>
+        </member>
+        <member name="T:Nehawu.MembershipRegistration.Backend.Authorization.RoleNames">
+            <summary>
+            ShaProjectName Role Names
+            </summary>
+        </member>
+        <member name="F:Nehawu.MembershipRegistration.Backend.Authorization.RoleNames.DataAdministrator">
+            <summary>
+            Data Administrator
+            </summary>
+        </member>
+        <member name="T:Nehawu.MembershipRegistration.Backend.Authorization.ShaProjectNameAuthorizationProvider">
+            <summary>
+            ShaProjectName Authorization Provider
+            </summary>
+        </member>
+        <member name="M:Nehawu.MembershipRegistration.Backend.Authorization.ShaProjectNameAuthorizationProvider.SetPermissions(Abp.Authorization.IPermissionDefinitionContext)">
+            <summary>
+            Register permissions declared in the <see cref="T:Nehawu.MembershipRegistration.Backend.Authorization.PermissionNames"/> class
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Nehawu.MembershipRegistration.Backend.Authorization.ShaProjectNamePermissionChecker">
+            <summary>
+            ShaProjectName Permission checker
+            </summary>
+        </member>
+        <member name="M:Nehawu.MembershipRegistration.Backend.Authorization.ShaProjectNamePermissionChecker.#ctor(Abp.Domain.Repositories.IRepository{Shesha.Domain.Person,System.Guid},Abp.Domain.Repositories.IRepository{Shesha.Domain.ShaRoleAppointedPerson,System.Guid},Abp.Domain.Repositories.IRepository{Shesha.Domain.ShaRoleAppointmentEntity,System.Guid})">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Nehawu.MembershipRegistration.Backend.Authorization.ShaProjectNamePermissionChecker.IsGrantedAsync(System.Int64,System.String)">
+            inheritedDoc
+        </member>
+        <member name="M:Nehawu.MembershipRegistration.Backend.Authorization.ShaProjectNamePermissionChecker.IsInAnyOfRoles(Shesha.Domain.Person,System.String[])">
+            inheritedDoc
+        </member>
+        <member name="M:Nehawu.MembershipRegistration.Backend.Authorization.ShaProjectNamePermissionChecker.IsDataAdministrator(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nehawu.MembershipRegistration.Backend.Configuration.ShaProjectNameSettingNames">
+            <summary>
+            Contains setting names for ShaProjectNames
+            </summary>
+        </member>
+        <member name="T:Nehawu.MembershipRegistration.Backend.Configuration.ShaProjectNameSettingProvider">
+            <summary>
+            Defines ShaProjectName settings
+            </summary>
+        </member>
+        <member name="M:Nehawu.MembershipRegistration.Backend.Configuration.ShaProjectNameSettingsAppService.Update(Nehawu.MembershipRegistration.Backend.Configuration.ShaProjectNameSettingsDto)">
+            <summary>
+            Updates ShaProjectName settings
+            </summary>
+        </member>
+        <member name="M:Nehawu.MembershipRegistration.Backend.Configuration.ShaProjectNameSettingsAppService.Get">
+            <summary>
+            Returns ShaProjectName settings
+            </summary>
+        </member>
+        <member name="M:Nehawu.MembershipRegistration.Backend.Configuration.ShaProjectNameSettingsAppService.ChangeSettingAsync(System.String,System.String)">
+            <summary>
+            Changes setting for tenant with fallback to application
+            </summary>
+            <param name="name">Setting name</param>
+            <param name="value">Setting value</param>
+        </member>
+        <member name="T:Nehawu.MembershipRegistration.Backend.Configuration.ShaProjectNameSettingsDto">
+            <summary>
+            ShaProjectName settings DTO
+            </summary>
+        </member>
+        <member name="T:Nehawu.MembershipRegistration.Backend.ShaProjectNameModule">
+            <summary>
+            ShaProjectName Module
+            </summary>
+        </member>
+        <member name="M:Nehawu.MembershipRegistration.Backend.ShaProjectNameModule.Initialize">
+            inheritedDoc
+        </member>
+        <member name="M:Nehawu.MembershipRegistration.Backend.ShaProjectNameModule.PreInitialize">
+            inheritedDoc
+        </member>
+        <member name="M:Nehawu.MembershipRegistration.Backend.ShaProjectNameModule.PostInitialize">
+            inheritedDoc
+        </member>
+    </members>
+</doc>
