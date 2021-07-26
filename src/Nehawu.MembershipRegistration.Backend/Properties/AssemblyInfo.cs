@@ -18,4 +18,4 @@ using Shesha.Attributes;
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("9249EB7B-B51E-466E-A620-DEEE0E439C43")]
 
-[assembly: TablePrefix("TablePrefix_")]
+[assembly: TablePrefix("Npo_")]
